@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/*
+====================
+RESET
+==================== */
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+}
+
+button,
+textarea,
+input {
+	font: inherit;
+}
+
+/*
+====================
+ULTILLITY CLASSES
+==================== */
+.nowrap {
+	white-space: nowrap;
+}
+
+.offscreen {
+	position: absolute;
+	left: -10000px;
+}
+
+/*
+====================
+GENERAL CLASSES
+==================== */
+body {
+	background-color: hsl(220, 15%, 55%);
+	font-family: "Outfit", sans-serif;
+}
+
+/*
+====================
+MAIN 
+==================== */
+.main__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: auto;
+	margin: 50px auto;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	padding: 1rem;
+}
+
+.main__section img {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.main__section figure {
+	margin-bottom: 30px;
+}
+
+.main__section h1 {
+	text-align: center;
+	line-height: 30px;
+	padding: 18px;
+	font-weight: bold;
+}
+
+.main__section p {
+	text-align: center;
+	color: hsl(220, 15%, 55%);
+	line-height: 20px;
+	margin-bottom: 16px;
+	width: 85%;
+	/* TODO: add font type */
+}
+
+@media screen and (min-width: 576px) {
+	.main__section {
+		width: 25%;
+	}
+}
